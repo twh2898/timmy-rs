@@ -2,6 +2,15 @@
 extern crate chrono;
 use chrono::{DateTime, Utc};
 
+pub mod prelude {
+    pub use Timed;
+    pub use TSData;
+}
+
+pub fn Timed<D>(data: D) -> TSData<D> {
+    TSData::new(data)
+}
+
 pub struct TSData<D> {
     data: D,
     timestamp: DateTime<Utc>,
