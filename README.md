@@ -30,6 +30,11 @@ fn main() {
 }
 ```
 
+## TODO
+
+- [ ] Code Documentation
+- [ ] Testing
+
 ## Licence
 
 timy-rs uses the [MIT](LICENCE) licence
