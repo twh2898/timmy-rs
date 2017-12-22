@@ -1,6 +1,6 @@
-# timmy-rs
+# timy-rs
 
-Timmy is a timing and data library in rust. It provides a way to attach a
+Timy is a timing and data library in rust. It provides a way to attach a
 timestamp to any data in much the same way as an `Option` or `Result` type
 works.
 
@@ -16,13 +16,13 @@ println!("Data {} was created at time {}", timed_int.data(), timed_int.timestamp
 Cargo.toml
 ```toml
 [dependencies]
-timmy = { git = "https://github.com/twh2898/timmy-rs.git" }
+timy = { git = "https://github.com/twh2898/timy-rs.git" }
 ```
 
 main.rs
 ```rust
-extern crate timmy;
-use timmy::Timed;
+extern crate timy;
+use timy::Timed;
 
 fn main() {
 	let timed_int = Timed(3);
@@ -32,4 +32,4 @@ fn main() {
 
 ## Licence
 
-timmy-rs uses the [MIT](LICENCE) licence
+timy-rs uses the [MIT](LICENCE) licence
