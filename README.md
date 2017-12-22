@@ -13,9 +13,13 @@ println!("Data {} was created at time {}", timed_int.data(), timed_int.timestamp
 
 ## Usage
 
+timy-rs depends on the [Chrono](https://crates.io/crates/chrono) crate for its
+time stamps.
+
 Cargo.toml
 ```toml
 [dependencies]
+chrono = "0.4"
 timy = { git = "https://github.com/twh2898/timy-rs.git" }
 ```
 
